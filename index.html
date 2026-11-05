@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ANGEL Beauty Parlour</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="simple.js" defer></script>
+
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+
+<section class="login-page" id="loginPage">
+
+<div class="login-box">
+
+<h1> ANGEL</h1>
+<h3>BEAUTY PARLOUR</h3>
+
+<h2>Welcome Back!</h2>
+
+<form id="loginForm">
+
+<input type="email" placeholder="Enter Email" required>
+
+<input type="password" placeholder="Enter Password" required>
+
+<button type="submit">LOGIN</button>
+
+</form>
+
+<p>Don't have an account?</p>
+
+<button class="register-btn" onclick="showRegister()">
+Create Account
+</button>
+
+<form id="registerForm" style="display:none;">
+
+<h2>Registration Form</h2>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Mobile Number" required>
+
+<input type="password" placeholder="Create Password" required>
+
+<button type="submit">REGISTER</button>
+
+<button type="button" class="register-btn"
+onclick="showLogin()">Back To Login</button>
+
+</form>
+
+</div>
+
+
+</section>
+
+<!-- MAIN WEBSITE -->
+
+<div id="mainWebsite" style="display:none;">
+
+<!-- HEADER -->
+
+<header class="header">
+
+<div class="logo">
+
+<div class="logo-icon"></div>
+
+<div>
+<h2>ANGEL</h2>
+<p>BEAUTY PARLOUR</p>
+</div>
+
+</div>
+
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#makeup">Makeup</a>
+<a href="#gallery">Gallery</a>
+<a href="#services">Services</a>
+<a href="#appointment">Appointment</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Where Beauty Meets Elegance</h1>
+
+<p>Unveil Your Natural Beauty With ANGEL Beauty Parlour</p>
+
+<a href="#appointment" class="hero-btn">
+BOOK YOUR APPOINTMENT
+</a>
+
+</div>
+
+</section>
+
+
+<!-- MAKEUP CARDS -->
+
+<section class="makeup" id="makeup">
+
+<h1>Our Makeup Collection</h1>
+
+<p class="subtitle">Discover Your Perfect Beauty Look</p>
+
+<div class="card-container">
+
+
+<div class="card">
+
+<img src="images/rashmika-thumb.jpg" alt="Bridal Makeup">
+
+<h2>Bridal Makeup</h2>
+
+<p>Beautiful bridal makeup for your special day.</p>
+
+<a href="#appointment" class="book-btn">Book Appointment</a>
+
+<a href="#bridal-gallery" class="view-btn">View Photos</a>
+
+</div>
+
+
+<div class="card">
+
+<img src="images/42829e1b2789a1fc3e5981b376d6f324.jpg" alt="Party Makeup">
+
+<h2>Party Makeup</h2>
+
+<p>Look beautiful at every special occasion.</p>
+
+<a href="#appointment" class="book-btn">Book Appointment</a>
+
+<a href="#party-gallery" class="view-btn">View Photos</a>
+
+</div>
+
+
+<div class="card">
+
+<img src=".vscode/images (1).jpeg" alt="HD Makeup" width="10">
+
+<h2>HD Makeup</h2>
+
+<p>Flawless and natural HD makeup looks.</p>
+
+<a href="#appointment" class="book-btn">Book Appointment</a>
+
+<a href="#hd-gallery" class="view-btn">View Photos</a>
+
+</div>
+
+
+<div class="card">
+
+<img src="images/Aliya.png" alt="Engagement Makeup" width="10">
+
+<h2>Engagement Makeup</h2>
+
+<p>Elegant makeup for your engagement.</p>
+
+<a href="#appointment" class="book-btn">Book Appointment</a>
+
+<a href="#engagement-gallery" class="view-btn">View Photos</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- GALLERY SECTION -->
+
+<section class="gallery" id="gallery">
+
+<h1>Our Beautiful Gallery</h1>
+
+<p class="subtitle">Explore Our Makeup Collection</p>
+
+
+<h2 id="bridal-gallery">Bridal Makeup Photos</h2>
+
+<div class="gallery-container">
+    <img src=".vscode/2b6bc7aec20989d580d2c8dd66b136bf.jpg" alt="bridal" width="50" height="50">
+
+<img src=".vscode/MM-CL-LH-28017-BL-DP-HV_C-V-ENQ-1.webp" alt="Bridal Photo" width="50" height="50">
+
+
+<img src=".vscode/582506403f1a0669c76370e04d743d15.jpg" alt="Bridal Photo" width="50" height="50">
+
+<img src=".vscode/03cb777d47df63d4c557d80c8289d82a.jpg" alt="Bridal Photo" width="50" height="50">
+
+<img src="images/rashmika-thumb.jpg" alt="bridel" width="50" height="50">
+
+<img src="images/99a24938e1b2a59829bba21aab441008.jpg" width="50" height="50">
+
+</div>
+
+
+<h2 id="party-gallery">Party Makeup Photos</h2>
+
+<div class="gallery-container">
+
+<img src="images/party 4.png" alt="Party Photo">
+
+<img src="images/party 2.png" alt="Party Photo">
+
+<img src="images/emgegment 2.png" alt="party Photo">
+</div>
+
+
+
+<h2 id="hd-gallery">HD Makeup Photos</h2>
+
+<div class="gallery-container">
+
+ <img src="images/hd2.png" alt="HD Photo">
+
+<img src="10f3203f9914c66e2b40246898eb462e (1).jpg" alt="HD Photo">
+
+<img src="images/party.png" alt="hd makeup">
+
+</div>
+
+
+<h2 id="engagement-gallery">Engagement Makeup Photos</h2>
+
+<div class="gallery-container">
+
+<img src="images/kiyara 1.png" alt="Engagement Photo">
+
+<img src="images/priyanka.png" alt="Engagement Photo">
+
+<img src="images/images.jpeg" alt="engagement Photo">
+</div>
+
+</section>
+
+
+<!-- SERVICES SECTION -->
+
+<section class="services" id="services">
+
+<h1>Our Professional Services</h1>
+
+<p class="subtitle">Experience Our Premium Beauty Services</p>
+
+<div class="service-container">
+
+
+<div class="service-card">
+<img src="images/heircutting.jpeg" alt="heir Cutting"  width="100" >
+<h2> Hair Cutting</h2>
+<p>Professional Hair Cutting And Styling.</p>
+<a href="#appointment" class="book-btn">Book Appointment</a>
+</div>
+
+
+<div class="service-card">
+<img src="images/35f5306d-dada-4d84-bd11-8089bf0bb321.jpeg" alt="fecial" width="100">
+<h2> Facial</h2>
+<p>Refreshing Facial And Skin Treatments.</p>
+<a href="#appointment" class="book-btn">Book Appointment</a>
+</div>
+
+
+<div class="service-card">
+<img src="images/ece8c4e7-063a-4b38-aaff-370e3876313b.jpeg" alt="heir" width="100">
+<h2> Hair Spa</h2>
+<p>Relaxing Hair Spa And Hair Care.</p>
+<a href="#appointment" class="book-btn">Book Appointment</a>
+</div>
+
+
+<div class="service-card">
+    <img src="images/hair cuting.jpeg" alt="heir Coloring" width="100">
+<h2>Hair Coloring</h2>
+<p>Beautiful Hair Coloring Services.</p>
+<a href="#appointment" class="book-btn">Book Appointment</a>
+
+</div>
+
+
+<div class="service-card">
+    <img src="images/007dce62-c4d2-4104-ac4d-430153c072db.jpeg" alt="Nail" width="100">
+<h2> Nail Art</h2>
+<p>Creative And Stylish Nail Art.</p>
+<a href="#appointment" class="book-btn">Book Appointment</a>
+</div>
+
+
+<div class="service-card">
+    <img src="images/54f504e7-88a7-4dec-9277-d2ac814a1d09.jpeg" alt="skin care" width="100">
+<h2> Skin Care</h2>
+<p>Professional Skin Care Treatments.</p>
+<a href="#appointment" class="book-btn">Book Appointment</a>
+</div>
+
+
+
+</div>
+
+</section>
+
+
+<!-- APPOINTMENT FORM -->
+ <div>
+
+<section class="appointment" id="appointment">
+
+<h1>Book Your Appointment</h1>
+    
+</div>
+
+</section>
+
+<p class="subtitle">Book Your Beauty Session With Us</p>
+
+<form class="appointment-form" id="bookingForm">
+
+<input type="text" placeholder="Enter Your Name" required>
+
+<input type="tel" placeholder="Mobile Number" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<select required>
+
+<option value="">Select Your Service</option>
+
+<option>Bridal Makeup</option>
+<option>Party Makeup</option>
+<option>HD Makeup</option>
+<option>Engagement Makeup</option>
+<option>Hair Cutting</option>
+<option>Facial</option>
+<option>Hair Spa</option>
+<option>Nail Art</option>
+
+</select>
+
+<input type="date" required>
+
+<textarea placeholder="Enter Your Message"></textarea>
+
+<button type="submit">Submit Appointment</button>
+
+</form>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h1>Contact Us</h1>
+
+<h2>ANGEL Beauty Parlour</h2>
+
+<p> Address: Your City, Maharashtra</p>
+
+<p> Phone: +91 9876543210</p>
+
+<p>  Email: angelbeauty@gmail.com</p>
+
+<p> Instagram: @angelbeauty</p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2> ANGEL BEAUTY PARLOUR</h2>
+
+<p>Where Beauty Meets Elegance</p>
+
+<p>Thank You For Visiting Our Website!</p>
+
+<p>© 2026 ANGEL Beauty Parlour. All Rights Reserved.</p>
+
+</footer>
+
+</div>
+
+
+
+
+</body>
+</html>
